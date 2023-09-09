@@ -5,8 +5,8 @@ navbar_entries:
   - title: blog
     url: blog
 
-  - title: website
-    url: https://www.abhinav.co
+  #- title: website
+  #  url: https://www.abhinav.co
 
 project_entries:
   - title: Project 1
@@ -35,33 +35,33 @@ project_entries:
     url: overview-post
     desc: It also has a scalable vertical list (in case you need it)
 
-old_project_entries:
-  - title: Soopr
-    url: https://www.soopr.co
-    desc: Delight your readers - add beautiful share and like buttons easily to your websites 
-    highlight: NEW
+#old_project_entries:
+#  - title: Soopr
+#    url: https://www.soopr.co
+#    desc: Delight your readers - add beautiful share and like buttons easily to your websites 
+#    highlight: NEW
 
-  - title: Cookie
-    url: https://github.com/abhinavs/cookie
-    desc: An open source landing website with supporting pages and integrated blog
+#  - title: Cookie
+#    url: https://github.com/abhinavs/cookie
+#    desc: An open source landing website with supporting pages and integrated blog
 
-  - title: Moonwalk
-    url: https://github.com/abhinavs/moonwalk
-    desc: A fast and minimalist Jekyll blog theme with clean dark mode
+#  - title: Moonwalk
+#    url: https://github.com/abhinavs/moonwalk
+#    desc: A fast and minimalist Jekyll blog theme with clean dark mode
 
-  - title: Humangous
-    url: https://www.humangous.co
-    desc: The better people know you, the better they collaborate
+#  - title: Humangous
+#    url: https://www.humangous.co
+#    desc: The better people know you, the better they collaborate
 
 footer_entries:
-  - title: abhinav's homepage
-    url: https://www.abhinav.co
+  - title: Cindy's homepage
+    url: https://xyyy9.github.io
 
-  - title: twitter
-    url: https://twitter.com/abhinav
+  - title: Personal Blog
+    url: https://ChloriteBot.github.io
 
   - title: github
-    url: https://github.com/abhinavs
+    url: https://github.com/xyyy9
 
   - title: feed
     url: feed.xml
@@ -97,5 +97,3 @@ misc_entries:
 
           - title: it is easy to use, see _data/home.yml to see how to configure it.
             url: false
-
-
