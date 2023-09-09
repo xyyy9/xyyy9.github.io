@@ -1,22 +1,22 @@
-title: Wild Pale
-author: Cindy Zhang
-url: https://xyyy9.github.io # root address of the site
+title: Moonwalk
+author: Abhinav Saxena
+url: https://www.abhinavsaxena.com/moonwalk # root address of the site
 description: > # description of the site (multiple lines allowed)
-  I obtained two bachelor's degrees in Data Science and Finance from University of International Business and Economics in June 2023 and am currently enrolled at BU Computing & Data Science program. I have a keen interest in NLP and am enthusiastic about processing and analyzing textual information. I am also proficient in machine learning frameworks like PyTorch. My undergraduate thesis work consisted of two papers: one examining the impact of sentiment in corporate financial report texts on company performance, and the other highlighting the characteristics of Beijing and Shanghai restaurants through user reviews. Both of these papers received A grades.
+  Moonwalk is a fast and elegant Jekyll theme with a clean dark mode. It comes with horizontal list (for navbar and footer), card list (for portfolio), and a generic vertical list. It is very easy to modify in case you want to build over it - please see _layouts/home.html to do that.
 
 permalink: /:slug
 
 favicon: "./logo.png" # relative path to site's favicon
 
 twitter:
-    username:  # update or delete this
+    username: abhinav # update or delete this
     card: summary_large_image
 
 #theme: moonwalk # if you are using GitHub Pages, change it to remote_theme: abhinavs/moonwalk
 remote_theme: abhinavs/moonwalk
 
 theme_config:
-  appearance: "auto" # can be "light", "dark" or "auto"
+  appearance: "dark" # can be "light", "dark" or "auto"
   appearance_toggle: true # if appearance can be switched by user
   back_home_text: "home.." # customize text for homepage link in post layout
   date_format: "%Y-%m-%d" # customize how date is formatted
