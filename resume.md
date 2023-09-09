@@ -5,30 +5,9 @@ title: resume
 
 # Cindy Zhang
 
-Tel: +1 650(680)6047
+|Tel: +1 650(680)6047|Email: xyz0906@bu.edu|
+|---|---|
 
-Email: xyz0906@bu.edu
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=xyyy9&hide=SCSS&layout=compact&theme=tokyonight)](https://github.com/anuraghazra/github-readme-stats)
 
-## Educational Background
-
-### Master
-
-**Computing & Data Science**
-
-Boston University `Boston, MA`
-
-### Bachelor
-
-**Bachelor of Engineering, Data Science and Big Data Technology**
-
-School of Information Technology, University of International Business and Economics `Beijing, China`
-
-**Bachelor of Management, Finance (International Business and Trade) (Dual Degree)**
-
-School of International Business and Trade, University of International Business and Economics `Beijing, China`
-
-## Internship Experience
-
-## Research Experience
-
-## Skills and Specialties
+<a href="_posts/resume.pdf" target="_blank">Resume Download</a>
