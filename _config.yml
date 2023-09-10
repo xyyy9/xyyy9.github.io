@@ -2,8 +2,7 @@ title: Cindy Zhang
 author: Xinyu (Cindy) Zhang
 url: https:/xyyy9.github.io # root address of the site
 description: > # description of the site (multiple lines allowed)
-  I obtained two bachelor's degrees in Data Science and Finance from UIBE in June 2023 and am currently enrolled at BU. I have a keen interest in NLP and am enthusiastic about processing and analyzing textual information. I am also proficient in machine learning frameworks like PyTorch. My undergraduate thesis work consisted of two papers: one examining the impact of sentiment in corporate financial report texts on company performance, and the other highlighting the characteristics of Beijing and Shanghai restaurants through user reviews.
-
+  I obtained two bachelor's degrees in Data Science and Finance from UIBE in June 2023 and am currently enrolled at BU. I have a keen interest in NLP and am enthusiastic about processing and analyzing textual information. I am also proficient in machine learning frameworks like PyTorch. 
 permalink: /:slug
 
 favicon: "./logo.png" # relative path to site's favicon
