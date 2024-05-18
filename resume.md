@@ -5,7 +5,7 @@ title: resume
 
 # Cindy Zhang
 
-Tel: +1 650(680)6047                Email: xyz0906@bu.edu
+Email: xyz0906@bu.edu
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=xyyy9&hide=SCSS&layout=compact&theme=tokyonight)](https://github.com/anuraghazra/github-readme-stats)
 

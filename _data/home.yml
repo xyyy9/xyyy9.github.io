@@ -1,21 +1,22 @@
 navbar_entries:
-  - title: resume
-    url: resume
+  # - title: resume
+  #   url: resume
 
   - title: blog
     url: blog
 
-  #- title: website
-  #  url: https://www.abhinav.co
+  # - title: website
+  #   url: https://www.abhinav.co
 
 project_entries:
-  - title: Project 1
-    url: overview-post
-    desc: This is an example project, configured in _data/home.yml
+  - title: Metric Voting
+    url: voting
+    desc: 
 
-  - title: Project 2
-    url: overview-post
-    desc: Projects are shown in card layout
+  - title: Gender Bias
+    url: gender-bias
+    desc: Exploring the Gender Bias in LLMs (GPTs, Bert)
+    highlight: LLMs
 
   - title: Project 3
     url: overview-post
@@ -58,7 +59,7 @@ footer_entries:
     url: https://xyyy9.github.io
 
   - title: Personal Blog
-    url: https://ChloriteBot.github.io
+    url: https://xyzxy.notion.site/ 
 
   - title: github
     url: https://github.com/xyyy9

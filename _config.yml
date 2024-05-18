@@ -2,7 +2,12 @@ title: Cindy Zhang
 author: Xinyu (Cindy) Zhang
 url: https:/xyyy9.github.io # root address of the site
 description: > # description of the site (multiple lines allowed)
-  I obtained two bachelor's degrees in Data Science and Finance from UIBE in June 2023 and am currently enrolled at BU. I have a keen interest in NLP and am enthusiastic about processing and analyzing textual information. I am also proficient in machine learning frameworks like PyTorch. 
+  I am a master student in Data Science at Boston University. I obtained dual Bachelor's degrees in Data Science and Economics from University of International Business and Economics. I'm driven by a passion for applying Generative AI across diverse fields to tackle real-world challenges.
+  
+  I have a keen interest in NLP and am enthusiastic about processing and analyzing textual information. I am also proficient in machine learning frameworks like PyTorch. 
+
+  I am currently working with [Professor DK Lee](https://www.leedokyun.com/bitlab.html), focusing on research in Generative AI.
+
 permalink: /:slug
 
 favicon: "./logo.png" # relative path to site's favicon

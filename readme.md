@@ -1,4 +1,4 @@
-Hi I'm Cindy, a MSDS student at Boston University. I'm interested in data mining! This is my Website, you can also find my other works in my GitHub.
+Hi I'm Cindy, a master student of Data Science at Boston University. I'm interested in LLMs and data analysis! This repo is my website, you can also find my other works in GitHub.
 
 https://xyyy9.github.io/
 
