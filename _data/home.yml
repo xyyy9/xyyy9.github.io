@@ -14,19 +14,20 @@ project_entries:
     desc: Comparison of Different Randomnized Voting Algorithms
     highlight: Math
 
-  - title: Gender Bias
+  - title: Gender Bias in LLMs
     url: exploring-gender-bias-in-LLMs
-    desc: Exploring the Gender Bias in LLMs (GPTs, Bert)
+    desc: Exploring the Gender Bias in LLMs (ChatGPTs, Gemini)
     highlight: LLMs
 
-  - title: Subtitle Generation
-    url: overview-post
-    desc: Generating Subtitles for Videos using fine-tuned LLMs
+  - title: Auto Subtitle Generation
+    url: subtitle
+    desc: Generating Subtitles for Videos using fine-tuned models
     highlight: LLMs
 
-  # - title: Project 4
-  #   url: overview-post
-  #   desc: This project uses highlight markup, configured in _data/home.yml
+  - title: Solving Math Problems with LLM
+    url: real-analysis
+    desc: Solving phd level RA problems using fine-tuned ChatGPT
+    highlight: LLMs
 
   # - title: Project 5
   #   url: overview-post
