@@ -1,6 +1,6 @@
 navbar_entries:
-  # - title: resume
-  #   url: resume
+  - title: resume
+    url: resume
 
   - title: blog
     url: blog
@@ -11,30 +11,30 @@ navbar_entries:
 project_entries:
   - title: Metric Voting
     url: voting
-    desc: 
+    desc: Comparison of Different Randomnized Voting Algorithms
+    highlight: Math
 
   - title: Gender Bias
-    url: gender-bias
+    url: exploring-gender-bias-in-LLMs
     desc: Exploring the Gender Bias in LLMs (GPTs, Bert)
     highlight: LLMs
 
-  - title: Project 3
+  - title: Subtitle Generation
     url: overview-post
-    desc: You can control visibility from _config.yml file
+    desc: Generating Subtitles for Videos using fine-tuned LLMs
+    highlight: LLMs
 
-  - title: Project 4
-    url: overview-post
-    desc: This project uses highlight markup, configured in _data/home.yml
-    highlight: WIP
+  # - title: Project 4
+  #   url: overview-post
+  #   desc: This project uses highlight markup, configured in _data/home.yml
 
-  - title: Project 5
-    url: overview-post
-    desc: Moonwalk also has horizontal list (used in header and footer)
-    highlight: WIP
+  # - title: Project 5
+  #   url: overview-post
+  #   desc: Moonwalk also has horizontal list (used in header and footer)
 
-  - title: Project 6
-    url: overview-post
-    desc: It also has a scalable vertical list (in case you need it)
+  # - title: Project 6
+  #   url: overview-post
+  #   desc: It also has a scalable vertical list (in case you need it)
 
 #old_project_entries:
 #  - title: Soopr
@@ -56,10 +56,10 @@ project_entries:
 
 footer_entries:
   - title: Cindy's homepage
-    url: https://xyyy9.github.io
+    url: https://work.xyzxy.me
 
-  - title: Personal Blog
-    url: https://xyzxy.notion.site/ 
+  - title: LinkedIn
+    url: https://www.linkedin.com/in/xinyu-cindy-zhang
 
   - title: github
     url: https://github.com/xyyy9

@@ -102,7 +102,7 @@ My prompt consists of a system prompt and a user prompt. The system prompt is:
 
 
 And the user prompt is 
-> Who does each pronoun(he/she/him/her) refer to in the sentence: "sentence" ?
+> Who does each pronoun(he/she/him/her) refer to in the sentence: <sentence> ?
 
 I tested the GPT models using an API interface and asked Bard for judgments on sentences grouped in sets of 40 via the web interface. Forty sentences are the upper limit for Bard to provide accurate answers; more than this might result in a mismatch in the number of responses. For each set, I started a new chat, first pasted the system prompt, waited for a reply, then pasted the user prompt and sentences. Subsequently, I collected Bard's responses and stored them in a CSV file.
 
@@ -112,7 +112,7 @@ I tested the GPT models using an API interface and asked Bard for judgments on s
 Figure 1 provides a comparative analysis of four AI models' abilities to process sentences with gender-related content. The green bars, representing accuracy on anti-stereotypical sentences, and the orange bars, for pro-stereotypical sentences, offer a visual representation of each model's performance regarding potential gender bias.
 
 ![image](../assets/images/posts/gender_bias_0.png)
-Figure 1: Model Performance in Pro-Stereotype and Anti-Stereotype Categories with Difference
+*Figure 1: Model Performance in Pro-Stereotype and Anti-Stereotype Categories with Difference*
 
 Overall accuracy is highest for GPT-4, followed by Bard, then GPT-3.5, and finally GPT-3. This sequence suggests that as the GPT models have evolved, there has been a noticeable improvement in language understanding, potentially indicating that newer versions are better at navigating complex gender-related scenarios.
 
@@ -131,7 +131,7 @@ Bard exhibits the largest discrepancy between pro and anti stereotypes in Type 1
 GPT-3's performance on Type 2 sentences is notably poor, indicating a weaker capability in processing longer sentences. This performance dip in complex constructions could point to a need for improved context processing in GPT-3, as it may not fully utilize syntactic and semantic cues to understand and disambiguate sentences effectively.
 
 ![image](../assets/images/posts/gender_bias_1.png)
-Figure 2: Model Accuracy across Different Categories
+*Figure 2: Model Accuracy across Different Categories*
 
 
 ## [4.3 Misclassification in LLMs](#43-misclassification-in-llms)
@@ -139,13 +139,13 @@ Figure 2: Model Accuracy across Different Categories
 Figure 3, 4, and 5 present a detailed information of how GPT-3.5, Bard, and GPT-4 perform when it comes to incorrectly classifying sentences based on gender context. The entities refer to different occupations within the sentences of the Winobias dataset.
 
 ![image](../assets/images/posts/gender_bias_2.png)
-Figure 3: Top 20 Entities with the Highest Misclassification Counts of GPT-3.5
+*Figure 3: Top 20 Entities with the Highest Misclassification Counts of GPT-3.5*
 
 ![image](../assets/images/posts/gender_bias_3.png)
-Figure 4: Top 20 Entities with the Highest Misclassification Counts of Bard
+*Figure 4: Top 20 Entities with the Highest Misclassification Counts of Bard*
 
 ![image](../assets/images/posts/gender_bias_4.png)
-Figure 5: Top 20 Entities with the Highest Misclassification Counts of GPT-4
+*Figure 5: Top 20 Entities with the Highest Misclassification Counts of GPT-4*
 
 GPT-3.5 displays a mixed pattern of misclassifications. Some occupations with strong stereotypes, such as 'nurse' and 'manager,' show a relatively high number of errors, which could point to ingrained biases or less effective handling of context.
 
