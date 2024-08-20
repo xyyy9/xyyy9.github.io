@@ -15,7 +15,7 @@ project_entries:
     highlight: Math
 
   - title: Gender Bias in LLMs
-    url: exploring-gender-bias-in-LLMs
+    url: gender-bias
     desc: Exploring the Gender Bias in LLMs (ChatGPTs, Gemini)
     highlight: LLMs
 
