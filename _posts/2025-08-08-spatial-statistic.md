@@ -6,7 +6,7 @@ tags: [AI4Health, Unsupervised Learning]
 
 [Click here to view the Poster](../assets/pdf/Poster_spatial.pdf)
 
-[Visualization of the simulation](../assets/pdf/weighted_trajectory_map.html)
+[Visualization of the simulation](../assets/pdf/ian_routes_visualization.html)
 
 ### Decoding Post-Hurricane Mobility: A Deep Learning Approach Using Spatial Graphs and LLMs
 
