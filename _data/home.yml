@@ -9,6 +9,16 @@ navbar_entries:
   #   url: https://www.abhinav.co
 
 project_entries:
+    - title: Glucose Interactive Browser
+    url: glucose
+    desc: An interactive web-based tool to visualize and analyze glucose data
+    highlight: visualization
+
+  - title: Spatial Statistic
+    url: spatial-statistic
+    desc: Clustering Spatial Data after Hurricane Ian 
+    highlight: AI4Science
+  
   - title: Metric Voting
     url: voting
     desc: Comparison of Different Randomnized Voting Algorithms
@@ -29,13 +39,6 @@ project_entries:
     desc: Solving phd level RA problems using fine-tuned ChatGPT
     highlight: LLMs
 
-  # - title: Project 5
-  #   url: overview-post
-  #   desc: Moonwalk also has horizontal list (used in header and footer)
-
-  # - title: Project 6
-  #   url: overview-post
-  #   desc: It also has a scalable vertical list (in case you need it)
 
 #old_project_entries:
 #  - title: Soopr
