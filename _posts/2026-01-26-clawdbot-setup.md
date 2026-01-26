@@ -32,17 +32,25 @@ clawdbot gateway start
 
 That's it for the basic install. The CLI guides you through initial configuration.
 
-### 2. Claude Max Subscription
+### 2. Authentication: Claude Subscription via CLI
 
-I already have a Claude Pro subscription for personal use, but Clawdbot requires an **API key** from Anthropic's developer console. This is separate from the web subscription.
+I already have a Claude Max subscription, and the good news is Clawdbot can actually use it directly through **Claude Code CLI OAuth** (no separate API billing needed).
 
-**Important distinction:**
-- **Claude Pro ($20/mo)** → For web/app usage
-- **Claude API** → Pay-per-token for programmatic access
+**Two authentication options:**
+- **Option A: Anthropic API key** → Pay-per-token billing
+- **Option B: Claude Code CLI OAuth** → Use your existing Claude subscription
 
-For Clawdbot, you need the API. You can't use your Pro subscription to power the bot.
+I went with **Option B**. The setup:
 
-I set up billing with a small initial credit ($5). For typical personal use (a few dozen messages a day), this lasts quite a while.
+```bash
+# On any machine with Claude Code CLI installed
+claude setup-token
+
+# Then paste the token into Clawdbot
+clawdbot models auth paste-token --provider anthropic
+```
+
+This lets me use my Claude Max subscription quota instead of setting up separate API billing. Much more convenient if you already pay for Claude.
 
 ### 3. Telegram Integration
 
@@ -96,6 +104,20 @@ So far, I haven't found Clawdbot dramatically better than just using Claude Code
 
 For pure coding work, Claude Code is still more direct. But for automation and cross-platform access, Clawdbot opens up new possibilities.
 
+## Hardware: The Accidental Home Server
+
+An interesting side effect of Clawdbot's recent popularity: **Mac minis are getting attention as budget home servers**. At around phone prices, they're perfect for running 24/7 services like this.
+
+I didn't need to buy one though — I had an unused **M2 MacBook Air** sitting around. With [Amphetamine](https://apps.apple.com/us/app/amphetamine/id937984704) (a free Mac app that prevents sleep), it's now my little home server.
+
+**Setup:**
+- M2 Air in clamshell mode, tucked away
+- Amphetamine keeping it awake
+- Clawdbot gateway running in the background
+- Still have full access when I need to use it as a laptop
+
+Not as elegant as a headless Mac mini, but it works perfectly. The M2 is efficient enough that power consumption isn't a concern.
+
 ## Next Steps
 
 I'm planning to build a daily stock sentiment analysis bot using Clawdbot's cron system. It will:
@@ -115,7 +137,7 @@ This is exactly the kind of automation where Clawdbot shines — scheduled tasks
 
 **Maybe skip if:**
 - You just need a coding assistant (Claude Code is simpler)
-- You're not ready to run API-based services
+- You don't have a spare machine to run the gateway 24/7
 - Security concerns about command execution bother you
 
 For me, the automation possibilities make it worthwhile. I'll revisit this post in a month to see how the stock analysis project turns out.
