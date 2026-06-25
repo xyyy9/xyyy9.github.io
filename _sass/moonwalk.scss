@@ -1199,6 +1199,52 @@ li code {
   }
 }
 
+.home-shell {
+  min-height: calc(100vh - 5.5rem);
+}
+
+.home-shell ~ .credits {
+  display: none;
+}
+
+.home-shell .hero-section {
+  min-height: calc(100vh - 8rem);
+  padding-bottom: 2.4rem;
+  padding-top: clamp(2rem, 4vw, 3.5rem);
+}
+
+.home-shell .hero-copy h1 {
+  font-size: clamp(8rem, 22vw, 18rem);
+  line-height: 0.75;
+  max-width: none;
+  text-transform: lowercase;
+}
+
+.hero-name {
+  color: var(--headings);
+  font-family: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+  font-size: clamp(0.95rem, 1.4vw, 1.2rem);
+  font-weight: 700;
+  letter-spacing: 0;
+  margin: 1.25rem 0 0;
+  text-transform: uppercase;
+}
+
+.home-shell .hero-copy:before {
+  height: 42%;
+}
+
+.home-shell .hero-headline,
+.home-shell .hero-body,
+.home-shell .hero-actions {
+  display: none;
+}
+
+.home-shell .hero-panel {
+  align-self: center;
+  min-height: 500px;
+}
+
 /* Poster editorial layer */
 body:before {
   background:
@@ -1634,6 +1680,14 @@ body:after {
 }
 
 @media screen and (max-width: 980px) {
+  .home-shell .hero-section {
+    min-height: 0;
+  }
+
+  .home-shell .hero-copy h1 {
+    font-size: clamp(7rem, 25vw, 11rem);
+  }
+
   .hero-panel {
     box-shadow:
       12px 12px 0 color-mix(in srgb, var(--accent-coral), transparent 8%),
@@ -1659,6 +1713,29 @@ body:after {
     text-shadow:
       0.04em 0 var(--accent-cyan),
       -0.025em 0 var(--accent-coral);
+  }
+
+  .home-shell {
+    min-height: auto;
+  }
+
+  .home-shell .hero-section {
+    gap: 2rem;
+    padding-bottom: 2.1rem;
+    padding-top: 2rem;
+  }
+
+  .home-shell .hero-copy h1 {
+    font-size: clamp(6.2rem, 34vw, 8.5rem);
+  }
+
+  .hero-name {
+    font-size: 0.78rem;
+    margin-top: 0.9rem;
+  }
+
+  .home-shell .hero-panel {
+    min-height: 0;
   }
 
   .hero-body {

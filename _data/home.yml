@@ -1,28 +1,20 @@
 navbar_entries:
   - title: work
-    url: "#work"
-
-  - title: notes
-    url: "#notes"
-
-  - title: resume
-    url: resume
+    url: work
 
   - title: blog
     url: blog
 
+  - title: resume
+    url: resume
+
+  - title: github
+    url: https://github.com/xyyy9
+
 hero:
-  eyebrow: AI agents / compute infrastructure / visual systems
-  title: Xinyu (Cindy) Zhang
-  headline: Building AI-native systems for the physical world of compute.
-  body: Data scientist and software engineer working across AI agents, operational intelligence, and data center workflows. I like turning messy technical systems into tools, maps, and stories people can actually use.
-  links:
-    - title: Read notes
-      url: "#notes"
-    - title: GitHub
-      url: https://github.com/xyyy9
-    - title: Resume
-      url: resume
+  eyebrow: AI agents / data centers / visual systems
+  title: xyz
+  name: Xinyu (Cindy) Zhang
   signals:
     - label: Current orbit
       value: Agentic systems

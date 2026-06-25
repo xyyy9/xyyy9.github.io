@@ -1,0 +1,16 @@
+---
+layout: default
+title: Work
+---
+
+<section class="blog-index work-index">
+  <a class="back-link" href="{{ "/" | relative_url }}">{{ site.theme_config.back_home_text }}</a>
+
+  <header class="post-hero blog-hero">
+    <p class="section-kicker">archive</p>
+    <h1>Work</h1>
+    <p>Projects, experiments, and visual research fragments.</p>
+  </header>
+
+  {% include card_list.html collection=site.data.home.project_entries %}
+</section>
