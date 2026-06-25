@@ -4,7 +4,7 @@ layout: default
 
 <div class="home-shell">
   <header class="site-nav" aria-label="Main navigation">
-    <a class="brand-mark" href="{{ "/" | relative_url }}" aria-label="Home">xz</a>
+    <a class="brand-mark" href="{{ "/" | relative_url }}" aria-label="Home">xyz</a>
     {% if site.theme_config.show_navbar == true %}
       <nav class="nav-links">
         {% for item in site.data.home.navbar_entries %}
@@ -23,36 +23,27 @@ layout: default
 
     <div class="hero-panel" aria-label="Abstract agent workflow visualization">
       <div class="panel-topline">
-        <span>agentic ops</span>
-        <span>field atlas 01</span>
+        <span>field atlas</span>
+        <span>ai native builder</span>
       </div>
-      <div class="poster-type">
-        <span>BUILD</span>
-        <strong>AGENTS</strong>
-      </div>
-      <div class="orbit-map">
-        <span class="orbit-ring ring-one"></span>
-        <span class="orbit-ring ring-two"></span>
-        <span class="trace trace-a"></span>
-        <span class="trace trace-b"></span>
-        <span class="trace trace-c"></span>
-        {% for node in site.data.home.hero.visual_nodes %}
-          <span class="workflow-node node-{{ forloop.index }}">{{ node }}</span>
-        {% endfor %}
-        <span class="core-node">agent</span>
+      <div class="identity-visual" aria-hidden="true">
+        <span class="visual-block block-a"></span>
+        <span class="visual-block block-b"></span>
+        <span class="visual-block block-c"></span>
+        <span class="visual-ring ring-a"></span>
+        <span class="visual-ring ring-b"></span>
+        <span class="visual-line line-a"></span>
+        <span class="visual-line line-b"></span>
+        <span class="visual-dot dot-a"></span>
+        <span class="visual-dot dot-b"></span>
+        <span class="visual-dot dot-c"></span>
+        <span class="visual-dot dot-d"></span>
+        <span class="visual-star"></span>
       </div>
       <div class="poster-caption">
-        <span>infra</span>
-        <span>tools</span>
-        <span>visual systems</span>
-      </div>
-      <div class="signal-grid">
-        {% for item in site.data.home.hero.signals %}
-          <div class="signal-card">
-            <span>{{ item.label }}</span>
-            <strong>{{ item.value }}</strong>
-          </div>
-        {% endfor %}
+        <span>agents</span>
+        <span>compute</span>
+        <span>visuals</span>
       </div>
     </div>
   </section>
