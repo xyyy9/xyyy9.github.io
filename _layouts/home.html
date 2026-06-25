@@ -17,7 +17,7 @@ layout: default
   <section class="hero-section">
     <div class="hero-copy">
       <p class="section-kicker">{{ site.data.home.hero.eyebrow }}</p>
-      <h1>{{ site.data.home.hero.title }}</h1>
+      <h1 data-text="{{ site.data.home.hero.title }}">{{ site.data.home.hero.title }}</h1>
       <p class="hero-name">{{ site.data.home.hero.name }}</p>
     </div>
 
@@ -27,6 +27,10 @@ layout: default
         <span>ai native builder</span>
       </div>
       <div class="identity-visual" aria-hidden="true">
+        <span class="print-matrix matrix-a"></span>
+        <span class="print-matrix matrix-b"></span>
+        <span class="ink-smear smear-a"></span>
+        <span class="ink-smear smear-b"></span>
         <span class="visual-block block-a"></span>
         <span class="visual-block block-b"></span>
         <span class="visual-block block-c"></span>
