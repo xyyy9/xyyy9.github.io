@@ -2,44 +2,123 @@
 layout: default
 ---
 
-<header>
-{% if site.theme_config.show_navbar == true %}
-  {% include horizontal_list.html collection=site.data.home.navbar_entries %}
-  <div class="dashed"></div>
-{% endif %}
+<div class="home-shell">
+  <header class="site-nav" aria-label="Main navigation">
+    <a class="brand-mark" href="{{ "/" | relative_url }}" aria-label="Home">xz</a>
+    {% if site.theme_config.show_navbar == true %}
+      <nav class="nav-links">
+        {% for item in site.data.home.navbar_entries %}
+          <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+        {% endfor %}
+      </nav>
+    {% endif %}
+  </header>
 
-  <h1>{{ site.title }}</h1>
-  {% if site.theme_config.show_description == true %}
-    <p>{{ site.description }}</p>
+  <section class="hero-section">
+    <div class="hero-copy">
+      <p class="section-kicker">{{ site.data.home.hero.eyebrow }}</p>
+      <h1>{{ site.data.home.hero.title }}</h1>
+      <p class="hero-headline">{{ site.data.home.hero.headline }}</p>
+      <p class="hero-body">{{ site.data.home.hero.body }}</p>
+      <div class="hero-actions">
+        {% for item in site.data.home.hero.links %}
+          <a class="button-link{% if forloop.first %} is-primary{% endif %}" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="hero-panel" aria-label="Abstract agent workflow visualization">
+      <div class="panel-topline">
+        <span>ops.signal</span>
+        <span>live map</span>
+      </div>
+      <div class="orbit-map">
+        <span class="orbit-ring ring-one"></span>
+        <span class="orbit-ring ring-two"></span>
+        <span class="trace trace-a"></span>
+        <span class="trace trace-b"></span>
+        <span class="trace trace-c"></span>
+        {% for node in site.data.home.hero.visual_nodes %}
+          <span class="workflow-node node-{{ forloop.index }}">{{ node }}</span>
+        {% endfor %}
+        <span class="core-node">agent</span>
+      </div>
+      <div class="signal-grid">
+        {% for item in site.data.home.hero.signals %}
+          <div class="signal-card">
+            <span>{{ item.label }}</span>
+            <strong>{{ item.value }}</strong>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  {{ content }}
+
+  <section class="section-block research-block" id="research">
+    <div class="section-heading">
+      <p class="section-kicker">research visuals</p>
+      <h2>Readable maps for hard systems.</h2>
+      <p>New public work will live here: visual essays, product comparisons, and interactive explainers about AI agents and data center operations.</p>
+    </div>
+    <div class="research-grid">
+      {% for item in site.data.home.research_entries %}
+        <article class="research-card">
+          <div>
+            <p class="card-eyebrow">{{ item.eyebrow }}</p>
+            <h3>{{ item.title }}</h3>
+          </div>
+          <p>{{ item.desc }}</p>
+          <span class="status-pill">{{ item.status }}</span>
+        </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  {% if site.theme_config.show_projects == true %}
+    <section class="section-block work-block" id="work">
+      <div class="section-heading">
+        <p class="section-kicker">selected work</p>
+        <h2>Older experiments, kept as working traces.</h2>
+        <p>Research projects, interactive tools, and LLM experiments from earlier work. New AI infrastructure case studies will join this archive as public material becomes available.</p>
+      </div>
+      {% include card_list.html collection=site.data.home.project_entries %}
+    </section>
   {% endif %}
-</header>
 
-{{ content }}
+  <section class="section-block principles-block">
+    <div class="section-heading">
+      <p class="section-kicker">how I build</p>
+      <h2>Agents need taste, traces, and operating context.</h2>
+    </div>
+    <div class="principles-grid">
+      {% for item in site.data.home.principles %}
+        <article>
+          <span>0{{ forloop.index }}</span>
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.desc }}</p>
+        </article>
+      {% endfor %}
+    </div>
+  </section>
 
-{% if site.theme_config.show_projects == true %}
-  <h2>{{ site.theme_config.home.title_projects }}</h2>
-  {% include card_list.html collection=site.data.home.project_entries %}
-{% endif %}
+  {% if site.theme_config.show_blog == true %}
+    <section class="section-block notes-block" id="notes">
+      <div class="section-heading">
+        <p class="section-kicker">field notes</p>
+        <h2>Writing from the build floor.</h2>
+        <p>Notes on agents, automation, data tools, and the parts of engineering that get more interesting when they become visible.</p>
+      </div>
+      {% include post_list.html limit=6 %}
+      <a class="notes-more" href="{{ "/blog" | relative_url }}">All field notes</a>
+    </section>
+  {% endif %}
 
-{% if site.theme_config.show_misc_list == true %}
-  <h2>{{ site.theme_config.home.title_misc_list }}</h2>
-  {% include vertical_list.html collection=site.data.home.misc_entries %}
-{% endif %}
-
-{% if site.theme_config.show_blog == true %}
-  <h2>{{ site.theme_config.home.title_blog }}</h2>
-  {% include post_list.html %}
-{% endif %}
-
-{% if site.theme_config.show_old_projects == true %}
-  <h2>{{ site.theme_config.home.title_old_projects }}</h2>
-  {% include card_list.html collection=site.data.home.old_project_entries %}
-{% endif %}
-
-
-{% if site.theme_config.show_footer == true %}
-  <footer>
-    <div class="dashed"></div>
-    {% include horizontal_list.html collection=site.data.home.footer_entries %}
-  </footer>
-{% endif %}
+  {% if site.theme_config.show_footer == true %}
+    <footer class="site-footer">
+      <p>AI agents, infrastructure, data tools, and visual research.</p>
+      {% include horizontal_list.html collection=site.data.home.footer_entries %}
+    </footer>
+  {% endif %}
+</div>

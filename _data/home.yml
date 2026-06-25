@@ -1,12 +1,66 @@
 navbar_entries:
+  - title: work
+    url: "#work"
+
+  - title: notes
+    url: "#notes"
+
   - title: resume
     url: resume
 
   - title: blog
     url: blog
 
-  # - title: website
-  #   url: https://www.abhinav.co
+hero:
+  eyebrow: AI agents / compute infrastructure / visual systems
+  title: Xinyu (Cindy) Zhang
+  headline: Building AI-native systems for the physical world of compute.
+  body: Data scientist and software engineer working across AI agents, operational intelligence, and data center workflows. I like turning messy technical systems into tools, maps, and stories people can actually use.
+  links:
+    - title: Read notes
+      url: "#notes"
+    - title: GitHub
+      url: https://github.com/xyyy9
+    - title: Resume
+      url: resume
+  signals:
+    - label: Current orbit
+      value: Agentic systems
+    - label: Domain
+      value: Data center operations
+    - label: Mode
+      value: Research + building
+  visual_nodes:
+    - Agent planner
+    - Tool calls
+    - Test signals
+    - Human review
+
+research_entries:
+  - title: Data Center Field Atlas
+    eyebrow: visual research
+    status: coming soon
+    desc: A Pudding-style explainer series on compute infrastructure, factory testing, cluster operations, and the strange metrics that decide whether machines are ready for production.
+
+  - title: Agent Evaluation Notes
+    eyebrow: agent systems
+    status: in progress
+    desc: Notes on tool use, traces, guardrails, handoffs, and the practical difference between impressive demos and dependable operational agents.
+
+  - title: Compute Ops Comparisons
+    eyebrow: industry maps
+    status: planned
+    desc: Visual comparisons for vendors, workflows, failure modes, and reliability patterns across the data center ecosystem.
+
+principles:
+  - title: Make invisible systems observable
+    desc: Logs, tests, and telemetry become useful only when humans can see what changed and why it matters.
+
+  - title: Build agents with traces
+    desc: Good agents should leave behind plans, tool calls, uncertainty, and enough evidence to audit their decisions.
+
+  - title: Explain before optimizing
+    desc: The fastest way to improve a workflow is often to draw the system clearly enough that everyone can point at the bottleneck.
 
 project_entries:
   - title: Glucose Interactive Browser
@@ -59,16 +113,13 @@ project_entries:
 #    desc: The better people know you, the better they collaborate
 
 footer_entries:
-  - title: Cindy's homepage
-    url: https://work.xyzxy.me
-
   - title: LinkedIn
     url: https://www.linkedin.com/in/xinyu-cindy-zhang
 
-  - title: github
+  - title: GitHub
     url: https://github.com/xyyy9
 
-  - title: feed
+  - title: Feed
     url: feed.xml
 
 misc_entries:

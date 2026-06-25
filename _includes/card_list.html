@@ -1,8 +1,9 @@
-<ul class="horizontal-list">
+<ul class="horizontal-list project-grid">
   {% for item in include.collection %}
 
-    <li class="card">
+    <li class="card project-card">
       <a href="{{ item.url }}">
+        <span class="project-index">0{{ forloop.index }}</span>
         <span class="header">
           {{ item.title }}
 
@@ -19,6 +20,7 @@
           {{ item.desc }}
         </p>
         {% endif %}
+        <span class="card-cta">Open case study</span>
       </a>
     </li>
 
