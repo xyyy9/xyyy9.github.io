@@ -1802,6 +1802,8 @@ body:after {
   }
 }
 
+$print-noise: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.72' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='.56'/%3E%3C/svg%3E");
+
 /* Homepage identity poster: focused cover, not a dashboard */
 .home-shell {
   --home-ink: #050507;
@@ -1811,7 +1813,6 @@ body:after {
   --home-pink: #ff4fa3;
   --home-yellow: #ffd21f;
   --home-green: #147d64;
-  --print-noise: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.72' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='.56'/%3E%3C/svg%3E");
   gap: 0;
   margin-left: 50%;
   min-height: calc(100vh - 5.5rem);
@@ -1954,7 +1955,7 @@ body:after {
 
 .home-shell .hero-copy h1:after {
   background:
-    var(--print-noise),
+    $print-noise,
     linear-gradient(90deg, var(--home-pink), color-mix(in srgb, var(--home-pink), black 18%));
   background-blend-mode: multiply, normal;
   bottom: 0.03em;
@@ -1982,7 +1983,7 @@ body:after {
 .home-shell .hero-panel {
   align-self: center;
   background:
-    var(--print-noise),
+    $print-noise,
     linear-gradient(180deg, rgba(255, 248, 232, 0.38), rgba(255, 248, 232, 0.08)),
     var(--home-paper);
   background-blend-mode: multiply, normal, normal;
@@ -2019,7 +2020,7 @@ body:after {
 }
 
 .home-shell .hero-panel:after {
-  background: var(--print-noise);
+  background: $print-noise;
   inset: -12%;
   mix-blend-mode: multiply;
   opacity: 0.23;
@@ -2038,7 +2039,7 @@ body:after {
 .identity-visual {
   aspect-ratio: 4 / 4.75;
   background:
-    var(--print-noise),
+    $print-noise,
     radial-gradient(circle at 22% 18%, rgba(255, 248, 232, 0.18), transparent 7rem),
     linear-gradient(112deg, #071a37 0 55%, #df4b93 55.35% 68%, #06101f 68.35%);
   background-blend-mode: overlay, screen, normal;
@@ -2084,7 +2085,7 @@ body:after {
 
 .identity-visual:after {
   background:
-    var(--print-noise),
+    $print-noise,
     repeating-linear-gradient(90deg, rgba(255, 248, 232, 0.12) 0 1px, transparent 1px 30px),
     repeating-linear-gradient(180deg, rgba(255, 248, 232, 0.09) 0 1px, transparent 1px 30px);
   inset: 0;
