@@ -1306,13 +1306,13 @@ body:after {
 
 .hero-section:after {
   background:
-    radial-gradient(circle, var(--accent-coral) 0 5px, transparent 5.5px),
-    radial-gradient(circle, var(--accent-cyan) 0 4px, transparent 4.5px),
+    radial-gradient(circle, color-mix(in srgb, var(--accent-coral), transparent 38%) 0 1.2px, transparent 1.6px),
+    radial-gradient(circle, color-mix(in srgb, var(--accent-cyan), transparent 45%) 0 1px, transparent 1.4px),
     repeating-linear-gradient(90deg, transparent 0 26px, color-mix(in srgb, var(--headings), transparent 84%) 26px 27px),
     repeating-linear-gradient(180deg, transparent 0 26px, color-mix(in srgb, var(--headings), transparent 88%) 26px 27px);
-  background-position: 0 0, 13px 13px, 0 0, 0 0;
-  background-size: 26px 26px, 26px 26px, 52px 52px, 52px 52px;
-  opacity: 0.56;
+  background-position: 0 0, 9px 9px, 0 0, 0 0;
+  background-size: 18px 18px, 18px 18px, 52px 52px, 52px 52px;
+  opacity: 0.42;
 }
 
 .section-kicker {
@@ -1381,12 +1381,12 @@ body:after {
 
 .hero-panel:before {
   background:
-    radial-gradient(circle, rgba(255, 210, 31, 0.88) 0 4px, transparent 4.5px),
-    radial-gradient(circle, rgba(255, 79, 163, 0.8) 0 7px, transparent 7.5px),
+    radial-gradient(circle, rgba(255, 210, 31, 0.72) 0 1.3px, transparent 1.7px),
+    radial-gradient(circle, rgba(255, 79, 163, 0.52) 0 1.6px, transparent 2px),
     linear-gradient(120deg, transparent 0 45%, rgba(255, 248, 232, 0.2) 45.1% 45.8%, transparent 45.9%);
-  background-position: 0 0, 10px 8px, 0 0;
-  background-size: 30px 30px, 42px 42px, 100% 100%;
-  opacity: 0.68;
+  background-position: 0 0, 8px 6px, 0 0;
+  background-size: 16px 16px, 22px 22px, 100% 100%;
+  opacity: 0.5;
 }
 
 .hero-panel:after {
@@ -1483,7 +1483,7 @@ body:after {
 
 .research-card:nth-child(1) {
   background:
-    radial-gradient(circle, color-mix(in srgb, var(--accent-coral), transparent 8%) 0 8px, transparent 8.4px) 0 0 / 28px 28px,
+    radial-gradient(circle, color-mix(in srgb, var(--accent-coral), transparent 34%) 0 1.8px, transparent 2.2px) 0 0 / 16px 16px,
     linear-gradient(145deg, #101f39, #06101d);
 }
 
@@ -1538,8 +1538,10 @@ body:after {
 
 .post-hero {
   background:
-    radial-gradient(circle, color-mix(in srgb, var(--accent-coral), transparent 8%) 0 6px, transparent 6.5px) 0 0 / 28px 28px,
+    radial-gradient(circle, color-mix(in srgb, var(--accent-coral), transparent 42%) 0 1.4px, transparent 1.9px) 0 0 / 15px 15px,
+    radial-gradient(circle, color-mix(in srgb, var(--headings), transparent 82%) 0 0.8px, transparent 1.2px) 7px 8px / 15px 15px,
     linear-gradient(110deg, #071326 0 62%, var(--accent-coral) 62.2% 76%, #050507 76.2%);
+  background-blend-mode: screen, normal, normal;
   border: 2px solid var(--headings);
   box-shadow: 14px 14px 0 color-mix(in srgb, var(--accent-cyan), transparent 12%);
   margin-top: 1rem;
@@ -1811,7 +1813,11 @@ body:after {
   --home-green: #147d64;
   --print-noise: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.72' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='.56'/%3E%3C/svg%3E");
   gap: 0;
+  margin-left: 50%;
   min-height: calc(100vh - 5.5rem);
+  max-width: 1720px;
+  transform: translateX(-50%);
+  width: calc(100vw - clamp(3rem, 8vw, 9rem));
 }
 
 .home-shell:before {
@@ -1877,8 +1883,8 @@ body:after {
 
 .home-shell .hero-section {
   align-items: center;
-  gap: clamp(2.4rem, 7vw, 7rem);
-  grid-template-columns: minmax(0, 0.94fr) minmax(300px, 0.62fr);
+  gap: clamp(3rem, 7vw, 8.5rem);
+  grid-template-columns: minmax(360px, 0.86fr) minmax(360px, 0.7fr);
   isolation: isolate;
   min-height: calc(100vh - 8.4rem);
   padding: clamp(1.2rem, 2.2vw, 2rem) 0 clamp(2.2rem, 4vw, 3.3rem);
@@ -1898,10 +1904,10 @@ body:after {
 .home-shell .hero-section:after {
   background: linear-gradient(180deg, var(--home-pink), color-mix(in srgb, var(--home-pink), black 18%));
   clip-path: polygon(22% 0, 100% 0, 78% 100%, 0 100%);
-  inset: -3.5rem clamp(15rem, 27vw, 31rem) -4.4rem auto;
+  inset: -3.5rem clamp(20rem, 31vw, 42rem) -4.4rem auto;
   max-width: none;
-  opacity: 0.78;
-  width: clamp(5.4rem, 9vw, 8.6rem);
+  opacity: 0.54;
+  width: clamp(3.8rem, 6vw, 6.8rem);
   z-index: -1;
 }
 
@@ -1925,7 +1931,7 @@ body:after {
 .home-shell .hero-copy h1 {
   color: var(--headings);
   display: inline-block;
-  font-size: clamp(6.9rem, 15.8vw, 13.2rem);
+  font-size: clamp(7rem, 13vw, 15rem);
   filter: contrast(1.04) saturate(1.08);
   isolation: isolate;
   line-height: 0.76;
@@ -1987,7 +1993,7 @@ body:after {
     -7px -7px 0 color-mix(in srgb, var(--home-blue), transparent 10%),
     0 32px 80px rgba(0, 0, 0, 0.4);
   color: var(--home-ink);
-  max-width: 390px;
+  max-width: clamp(390px, 25vw, 510px);
   min-height: 0;
   overflow: hidden;
   padding: clamp(0.9rem, 1.6vw, 1.12rem);
@@ -2065,14 +2071,14 @@ body:after {
 
 .identity-visual:before {
   background:
-    radial-gradient(circle, rgba(255, 79, 163, 0.88) 0 9px, transparent 9.8px) 0 0 / 42px 42px,
-    radial-gradient(circle, rgba(255, 210, 31, 0.56) 0 5px, transparent 5.8px) 21px 21px / 42px 42px;
-  filter: blur(0.14px) contrast(1.24);
+    radial-gradient(circle, rgba(255, 79, 163, 0.62) 0 1.7px, transparent 2.3px) 0 0 / 12px 12px,
+    radial-gradient(circle, rgba(255, 210, 31, 0.34) 0 0.9px, transparent 1.4px) 6px 6px / 12px 12px;
+  filter: blur(0.08px) contrast(1.18);
   inset: -7%;
   -webkit-mask-image: radial-gradient(ellipse at 54% 48%, #000 0 50%, transparent 72%);
   mask-image: radial-gradient(ellipse at 54% 48%, #000 0 50%, transparent 72%);
   mix-blend-mode: screen;
-  opacity: 0.46;
+  opacity: 0.28;
   z-index: 1;
 }
 
@@ -2099,14 +2105,14 @@ body:after {
 
 .print-matrix {
   color: var(--home-pink);
-  filter: blur(0.2px) contrast(1.45);
+  filter: blur(0.08px) contrast(1.22);
   mix-blend-mode: screen;
-  opacity: 0.58;
+  opacity: 0.24;
   z-index: 2;
 }
 
 .matrix-a {
-  background: radial-gradient(circle, currentColor 0 7px, transparent 7.9px) 0 0 / 30px 30px;
+  background: radial-gradient(circle, currentColor 0 1.5px, transparent 2px) 0 0 / 10px 10px;
   height: 45%;
   left: 8%;
   -webkit-mask-image: linear-gradient(90deg, transparent, #000 14%, #000 82%, transparent);
@@ -2117,12 +2123,12 @@ body:after {
 }
 
 .matrix-b {
-  background: radial-gradient(circle, var(--home-blue) 0 4px, transparent 4.8px) 0 0 / 22px 22px;
+  background: radial-gradient(circle, var(--home-blue) 0 1.1px, transparent 1.7px) 0 0 / 9px 9px;
   height: 64%;
   left: -8%;
   -webkit-mask-image: radial-gradient(ellipse at 36% 50%, #000 0 48%, transparent 72%);
   mask-image: radial-gradient(ellipse at 36% 50%, #000 0 48%, transparent 72%);
-  opacity: 0.5;
+  opacity: 0.2;
   top: 2%;
   transform: rotate(6deg);
   width: 64%;
@@ -2307,6 +2313,13 @@ body:after {
 }
 
 @media screen and (max-width: 680px) {
+  .home-shell {
+    margin-left: 0;
+    max-width: none;
+    transform: none;
+    width: 100%;
+  }
+
   .home-shell:before {
     background:
       linear-gradient(90deg, color-mix(in srgb, var(--home-blue), black 36%) 0 4.65rem, transparent 4.65rem),
