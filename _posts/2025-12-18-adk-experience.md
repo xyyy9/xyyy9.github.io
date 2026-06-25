@@ -1,5 +1,7 @@
 ---
 layout: post
+title: "ADK: When You Need Multi-Agent Orchestration"
+hide_first_heading: true
 author: Xinyu Zhang
 tags: [Tech, AI, Agents]
 ---

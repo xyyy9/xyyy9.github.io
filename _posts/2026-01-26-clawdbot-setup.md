@@ -1,5 +1,7 @@
 ---
 layout: post
+title: "Setting Up Clawdbot: A Claude-Powered Telegram Bot"
+hide_first_heading: true
 author: Xinyu Zhang
 tags: [Tech, AI, Tutorial]
 ---

@@ -1,5 +1,7 @@
 ---
 layout: post
+title: "AI, Arrogance, and the Art of Process"
+hide_first_heading: true
 author: Xinyu Zhang
 tags: [Blog]
 ---

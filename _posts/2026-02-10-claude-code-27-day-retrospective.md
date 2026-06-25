@@ -1,5 +1,7 @@
 ---
 layout: post
+title: "Claude Code in My Real Daily Workflow: A 27-Day Engineering Retrospective"
+hide_first_heading: true
 author: Xinyu Zhang
 tags: [Tech, AI, Engineering, Productivity]
 ---
